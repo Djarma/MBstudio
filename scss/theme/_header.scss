@@ -1,0 +1,132 @@
+header {
+  padding-top: 30px;
+  margin-bottom: 24px;
+
+  .navbar {
+    .navbar-toggler {
+        border: none;
+      .navbar-toggler-icon {
+        background: none;
+
+        &:hover {
+            fill: #ccc;
+        }
+      }
+    }
+  }
+
+  .navbar-brand {
+    font-family: $josefin-bold;
+    position: relative;
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand-info {
+    font-size: 0.87rem;
+    margin-left: 48px;
+    position: relative;
+    bottom: 3px;
+  }
+
+  .navbar-nav {
+    font-size: 0.87rem;
+    padding-top: 15px;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .nav-link {
+      color: #000 !important;
+      padding: 0 !important;
+      position: relative;
+
+      &:after {
+        content: "";
+        background: #000;
+        border-radius: 50%;
+        width: 4px;
+        height: 4px;
+        bottom: 10px;
+        left: 35%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.4s linear;
+      }
+
+      &:hover {
+        &:after {
+          opacity: 100;
+        }
+      }
+
+      &.active {
+        &:after {
+          opacity: 100;
+        }
+      }
+    }
+  }
+  .home {
+    width: 16px;
+    height: 20px;
+    position: relative;
+    bottom: 6px;
+  }
+}
+
+@media (min-width: 450px) {
+}
+
+@media (min-width: 768px) {
+  header {
+    .navbar-brand {
+      font-size: 1.75rem;
+
+      &:after {
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 20px;
+        left: 170px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    margin-bottom: 40px !important;
+
+    .navbar-nav {
+
+      li {
+        padding-top: 0;
+        margin-left: 35px;
+      }
+
+      .nav-link {
+        &:after {
+          content: "";
+          bottom: -10px;
+          left: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  header {
+    .navbar {
+      .navbar-nav {
+        li {
+          margin-left: 45px;
+        }
+      }
+    }
+  }
+}

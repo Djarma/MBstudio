@@ -1,0 +1,558 @@
+.process-services {
+  margin-bottom: 30px;
+  padding-bottom: 60px;
+
+  .process-services-info {
+    padding-top: 60px;
+
+    ul {
+      padding-left: 17px;
+      li {
+        list-style: none;
+        position: relative;
+        font-family: $josefin-regular;
+        margin-bottom: 7px;
+
+        &::before {
+          content: "";
+          width: 4px;
+          height: 4px;
+          background: #000;
+          border-radius: 50%;
+          position: absolute;
+          left: -13px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
+  .process-services-photo {
+    margin-bottom: 18px;
+
+    .owl-nav {
+      font-size: 2rem;
+      height: 16px;
+      margin-top: 0;
+
+      button.owl-prev {
+        img {
+          left: 0;
+          transition: 0.1s linear;
+        }
+
+        &:hover {
+          img {
+            left: -10px;
+          }
+        }
+      }
+      button.owl-next {
+        img {
+          right: 0;
+          transition: 0.1s linear;
+        }
+
+        &:hover {
+          img {
+            right: -10px;
+          }
+        }
+      }
+
+      .owl-next {
+        width: 40px;
+        height: 16px;
+
+        img {
+          position: relative;
+          bottom: 12px;
+        }
+
+        &:hover {
+          background: none;
+        }
+      }
+
+      .owl-prev {
+        width: 40px;
+        height: 16px;
+        margin-right: 100px;
+
+        img {
+          position: relative;
+          bottom: 12px;
+        }
+
+        &:hover {
+          background: none;
+        }
+      }
+    }
+
+    .owl-dots {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .owl-dot {
+        width: 20px;
+        height: 20px;
+
+        &:hover span {
+          background: #000;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          margin-bottom: 7px;
+        }
+
+        span {
+          width: 8px;
+          height: 8px;
+        }
+
+        &.active {
+          span {
+            width: 4px;
+            height: 4px;
+            background-color: #000;
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.process-work {
+  .process-work-item {
+    padding-top: 10px !important;
+    max-width: 360px;
+
+    a {
+      &:hover {
+        .arrow-small {
+          right: -10px;
+        }
+      }
+    }
+
+    h5 {
+      font-size: 1.87rem;
+      margin-bottom: 18px;
+    }
+
+    .process-info {
+      max-width: 250px;
+      font-size: 1.25rem;
+    }
+
+    .num {
+      text-transform: uppercase;
+      display: inline-block;
+      border-bottom: 1px solid #000;
+      margin-bottom: 29px;
+      font-size: 0.87rem;
+    }
+
+    .title {
+      margin-bottom: 29px;
+    }
+
+    .info {
+      margin-bottom: 29px;
+      max-width: 360px;
+      line-height: 20px;
+    }
+
+    .discover {
+      font-size: 0.87rem !important;
+    }
+  }
+}
+
+.process-modal {
+  .modal-content {
+    border-radius: 0 !important;
+    border: none !important;
+  }
+  .modal-header {
+    border-bottom: 0;
+
+    .close {
+      color: #000;
+      font-family: $josefin-light;
+      font-size: 0.87rem;
+      text-transform: uppercase;
+      text-shadow: 0;
+      opacity: 1;
+
+      span {
+        img {
+          width: 10px;
+          height: 10px;
+          position: relative;
+          bottom: 2px;
+        }
+      }
+    }
+  }
+
+  .process-modal-item {
+    .num {
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px solid #000;
+      font-size: 0.87rem;
+      margin-bottom: 28px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 22px;
+    }
+    .process-modal-info {
+      line-height: 24px;
+    }
+  }
+
+  .process-modal-gallery {
+    .owl-nav {
+      position: relative;
+      bottom: -25px;
+
+      button:hover {
+        background: transparent;
+      }
+
+      .owl-prev {
+        position: relative;
+        left: -70px;
+
+        img {
+          width: 40px;
+          position: relative;
+        }
+      }
+
+      .owl-next {
+        position: relative;
+        right: -70px;
+
+        img {
+          width: 40px;
+          position: relative;
+        }
+      }
+
+      button.owl-prev {
+        img {
+          left: 0;
+          transition: 0.1s linear;
+        }
+
+        &:hover {
+          img {
+            left: -10px;
+          }
+        }
+      }
+      button.owl-next {
+        img {
+          right: 0;
+          transition: 0.1s linear;
+        }
+
+        &:hover {
+          img {
+            right: -10px;
+          }
+        }
+      }
+    }
+
+    .owl-dots {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -25px;
+
+      .owl-dot {
+        &:hover span {
+          background: #000;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          margin-bottom: 7px;
+        }
+
+        span {
+          width: 8px;
+          height: 8px;
+          margin-right: 5px;
+        }
+
+        &:last-of-type span {
+          margin-right: 0;
+        }
+
+        &.active {
+          span {
+            width: 4px;
+            height: 4px;
+            background: #000;
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+  .modal-img-info {
+    position: relative;
+    bottom: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .process-work {
+    .process-work-item {
+      padding: 0 35px;
+    }
+  }
+
+  .process-services-photo {
+    .owl-nav {
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        transform: translateY(-50%);
+      }
+
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: -50px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .mb-90 {
+    margin-bottom: 90px;
+  }
+  .process-services {
+    padding-top: 70px;
+    margin-bottom: 95px;
+
+    .process-services-info {
+      padding-top: 0;
+
+      h3 {
+        font-size: 1.87rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+
+    .process-services-photo {
+      padding-top: 0;
+
+      .owl-nav {
+        font-size: 2rem;
+
+        .owl-next {
+          width: 60px;
+          right: -100px;
+        }
+
+        .owl-prev {
+          width: 60px;
+          left: -100px;
+        }
+      }
+    }
+
+    .owl-dots {
+      bottom: -100px;
+
+      .owl-dot {
+        margin-right: 37px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .process-modal {
+    .modal-dialog {
+      max-width: 1000px;
+    }
+
+    .modal-header {
+      padding-top: 30px;
+      padding-right: 30px;
+      margin-bottom: 15px;
+    }
+
+    .process-modal-item {
+      padding-top: 40px;
+
+      .process-modal-info {
+        max-width: 315px;
+      }
+    }
+
+    .process-modal-gallery {
+      position: relative;
+
+      .owl-nav {
+        position: static;
+
+        .owl-prev {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -80px;
+        }
+        .owl-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -80px;
+        }
+      }
+
+      .owl-dots {
+        position: relative;
+        bottom: -35px;
+
+        .owl-dot {
+          margin-right: 30px;
+        }
+      }
+    }
+    .modal-img-info {
+      bottom: 15px;
+    }
+  }
+}
+
+.process-work {
+  padding-bottom: 120px;
+}
+
+@media (min-width: 1200px) {
+  .process-services {
+    .process-services-photo {
+      .owl-dots {
+        bottom: -88px;
+
+        .owl-dot {
+          span {
+            margin-right: 54px;
+          }
+        }
+      }
+    }
+  }
+
+  .process-work {
+    .processScene {
+      &:nth-of-type(2) {
+        margin-bottom: 5rem !important;
+      }
+    }
+
+    .process-work-item.first {
+      height: 200px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .process-services-photo {
+    .owl-nav {
+      .owl-next {
+        right: -130px !important;
+      }
+
+      .owl-prev {
+        left: -130px !important;
+      }
+    }
+  }
+
+  .process-modal {
+    .modal-dialog {
+      max-width: 1400px;
+    }
+
+    .modal-header {
+      padding-top: 60px;
+      padding-right: 60px;
+      margin-bottom: 25px;
+    }
+
+    .modal-body {
+      padding: 40px;
+      padding-bottom: 100px;
+    }
+
+    .process-modal-item {
+      padding-top: 100px;
+
+      .process-modal-info {
+        font-size: 1.25rem;
+        max-width: 385px;
+      }
+    }
+
+    .process-modal-gallery {
+      position: relative;
+
+      .owl-nav {
+        position: static;
+
+        .owl-prev {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -110px;
+
+          img {
+            width: 60px;
+          }
+        }
+        .owl-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -110px;
+
+          img {
+            width: 60px;
+          }
+        }
+      }
+
+      .owl-dots {
+        position: relative;
+        bottom: -75px;
+      }
+    }
+    .modal-img-info {
+      bottom: -5px;
+    }
+  }
+}

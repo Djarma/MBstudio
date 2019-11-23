@@ -1,0 +1,13 @@
+footer {
+    background-color: $gray-400;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    .copyright {
+        text-align: center;
+        
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

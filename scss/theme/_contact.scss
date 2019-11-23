@@ -1,0 +1,168 @@
+.contact {
+    margin-bottom: 69px;
+
+    .contact-info {
+        margin-bottom: 20px;
+        padding-top: 20px;
+
+        figure {
+            margin-bottom: 30px;
+        }
+
+        .contact-info-title {
+            font-size: 1.3rem !important;
+            margin-bottom: 26px;
+        }
+
+        p {
+            line-height: 20px;
+            margin-bottom: 24px;
+        }
+
+        h6 {
+            font-family: $josefin-regular;
+        }
+    }
+}
+
+.contact-social {
+    margin-bottom: 59px;
+
+    .contact-social-item {
+
+        a {
+            &:hover {
+                .arrow-small {
+                  right: -10px;
+                }
+              }
+        }
+
+        address {
+            p {
+                font-size: 0.87rem;
+            }
+        }
+
+        .icon {
+            width: 30px;
+            display: inline-block;
+
+            img {
+                margin-bottom: 31px;
+                width: 100%;
+            }
+        }
+
+        h6 {
+            margin-bottom: 25px;
+        }
+
+        .desc {
+            font-size: 0.87rem;
+        }
+    }
+}
+
+.contact-form {
+    margin-bottom: 119px;
+
+    h3 {
+        margin-bottom: 60px;
+    }
+
+    .form-row {
+
+        .form-label {
+            font-family: $josefin-light;
+            line-height: 20px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 10px;
+            transition: .2s linear;
+        }
+
+        .form-label-tx {
+
+            font-family: $josefin-light;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+
+
+        .form-control:focus {
+            box-shadow: none !important;
+        }
+
+        .focused .form-label {
+            transform: translateY(-130%);
+            font-size: .87em;
+          }
+
+
+
+        .form-control {
+
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid #cecece;
+            margin-bottom: 72px;
+        }
+
+        button {
+            &:hover {
+                .arrow-small {
+                  right: -10px;
+                }
+              }
+        }
+
+        .btn {
+            border: none;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            font-family: $josefin-light;
+            
+            &:hover {
+                background-color: transparent;
+                color: #000;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .contact {
+
+        .contact-photo {
+            padding-top: 40px;
+        }
+    }
+    
+    .contact-social {
+        margin-bottom: 119px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .contact {
+        margin-bottom: 119px;
+            
+        .contact-info {
+
+            .contact-info-title {
+                font-size: 1.75rem !important;
+            }
+        }
+
+        .contact-photo {
+            padding-top: 0;
+        }
+    }
+}
+
+@media(min-width: 1400px) {
+    .contact {
+        padding-top: 70px;
+    }
+}

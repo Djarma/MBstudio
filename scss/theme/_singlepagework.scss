@@ -1,0 +1,300 @@
+.single-work {
+
+    .single-work-gallery {
+        margin-bottom: 35px;
+
+        .owl-dots {
+
+            .owl-dot  {
+                width: 20px;
+                height: 20px;
+                margin-right: 4px;
+
+                &:hover span {
+                    background: #000;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    margin-bottom: 7px;
+                }
+
+                span {
+                    width: 8px;
+                    height: 8px;
+                }
+
+                &.active {
+
+                    span {
+                        width: 4px;
+                        height: 4px;
+                        background-color: #000;
+                        margin-bottom: 7px;
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+            margin-top: 0;
+
+            button.owl-prev {
+                img {
+                  left: 0;
+                  transition: 0.1s linear;
+                }
+          
+                &:hover {
+                  img {
+                    left: -10px;
+                  }
+                }
+              }
+              button.owl-next {
+                img {
+                  right: 0;
+                  transition: 0.1s linear;
+                }
+          
+                &:hover {
+                  img {
+                    right: -10px;
+                  }
+                }
+              }
+
+            .owl-prev {
+                margin-right: 50px;
+
+                img {
+                    width: 40px;
+                    position: relative;
+                }
+
+                &:hover {
+                    background: none;
+                }
+            }
+
+            .owl-next {
+
+                img {
+                    width: 40px;
+                    position: relative;
+                }
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+
+
+        .owl-item {
+            padding-right: 2px;
+            max-height: 700px;
+
+            img {
+                object-fit: scale-down;
+                object-position: center;
+                height: 250px;
+            }
+        }
+    }
+
+    .single-work-item {
+        padding-right: 28px;
+        padding-bottom: 2px;
+        max-width: 900px;
+        margin-bottom: 48px;
+        position: relative;
+
+        h3 {
+            margin-bottom: 23px;
+        }
+
+        p {
+            line-height: 20px;
+            max-width: 766px;
+        }
+    }
+
+    .single-work-back {
+        text-align: center;
+        margin-bottom: 119px;
+
+        .back {
+            width: 34px;
+            height: 26px;
+            margin-bottom: 18px;
+            transition: 0.1s linear;
+
+            &:hover {
+                fill: #ccc;
+            }
+        }
+
+        p {
+            text-transform: uppercase;
+        }
+    }
+
+    .single-work-info {
+        margin-bottom: 80px;
+        .category,
+        .year{
+            p {
+                text-transform: uppercase;
+                font-size: 0.85rem;
+                margin-bottom: 12px;
+            }
+            
+            h6 {
+                text-transform: uppercase;
+            }
+        }
+
+        .category {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .single-work {
+        .single-work-gallery {
+            .owl-item {
+                img {
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .single-work {
+
+        .single-work-gallery {
+
+            .owl-item {
+                img {
+                    height: 450px;
+                }
+            }
+
+            .owl-dots {
+                padding-top: 22px;
+            }
+
+            .owl-nav {
+
+                .owl-prev {
+                    width: 60px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -80px;
+                    position: absolute;
+
+                    &:hover {
+                        background: none;
+                    }
+                }
+
+                .owl-next {
+                    width: 60px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -80px;
+                    position: absolute;
+
+                    &:hover {
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media(min-width: 992px) {
+    .single-work {
+        padding-top: 60px;
+
+
+        .single-work-item {
+            margin-bottom: 80px;
+
+            &:after {
+                content: '';
+                width: 1px;
+                height: 110%;
+                background: #ccc;
+                position: absolute;
+                right: 0px;
+                top: -20px;
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .single-work {
+        .single-work-gallery {
+            margin-bottom: 125px;
+
+            .owl-item {
+                img {
+                    height: 700px;
+                }
+            }
+
+            .owl-nav {
+                .owl-prev {
+                    left: -120px;
+
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                .owl-next {
+                    right: -120px;
+
+                    img {
+                        width: 60px;
+                    }
+                }
+            }
+        }
+
+        .single-work-info {
+            padding-left: 40px;
+        }
+
+        .single-work-item {
+
+            &:after {
+                right: -20px;
+            }
+        }
+    }
+}
+
+@media(min-width: 1400px) {
+    .single-work {
+        .single-work-info {
+            padding-left: 82px;
+        }
+
+        .single-work-item {
+
+            &:after {
+                right: -55px;
+                height: 120%;
+            }
+        }
+    }
+}
